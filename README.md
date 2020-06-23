@@ -35,8 +35,8 @@ Name: Docker-Pipeline
 #### "Pipeline" option
 #### Pipeline > Pipeline script from SCM
 #### SCM > Git
-#### Repository Url > github...git
-#### 
+#### Repository Url > https://github...git
+
 
 # Create repo > Upload files
 
