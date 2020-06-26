@@ -4,7 +4,7 @@
 #### Open the online FREE playground
 https://labs.play-with-docker.com/
 
-docker run -d -u root --name jenkins -p 8080:8080 -p 50000:50000 -v /root/jenkins_2112:/var/jenkins_home jenkins/jenkins:lts
+docker run -d -u root --name jenkins -p 8080:8080 -p 50000:50000 -v /root/jenkins_2112:/var/jenkins_home -v $(which docker):/usr/bin/docker -v /var/run/docker.sock:/var/run/docker.sock --restart always jenkins/jenkins:lts
 
 ## Get password
 docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
