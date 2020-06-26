@@ -11,7 +11,8 @@ docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
 # Plugins
 1. CloudBees Docker Build and Publish plugin
-2. Docker
+2. Docker Pipeline 
+3. Docker
 
 # Add DockerHub Credentials
 
