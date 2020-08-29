@@ -9,6 +9,10 @@ docker run -d -u root --name jenkins -p 8080:8080 -p 50000:50000 -v /root/jenkin
 ## Get password
 docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 
+## Install ansible
+docker exec -it jenkins bash
+apt update; apt install python ansible openssh-client vim iputils-ping -y
+
 # Plugins
 1. CloudBees Docker Build and Publish plugin
 2. Docker Pipeline 
